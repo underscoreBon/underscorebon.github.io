@@ -1,3 +1,13 @@
+@font-face{
+  font-family: "minecraft-font";
+  src: url("https://github.com/underscoreBon/underscoreBon.github.io/raw/main/styles/fonts/minecraft/minecraftia-regular-webfont.woff2");
+}
+
+@font-face{
+  font-family: "alternative-font";
+  src: url("");
+}
+
 h1 {
     color: rgb(75, 3, 95);
     background-color: rgb(198, 17, 189);
@@ -8,5 +18,5 @@ h1 {
   p {
     color: rgb(0, 0, 0);
     background-color: rgb(251, 233, 250);
-    font-family: "Minecraftia", cursive;
+    font-family: "minecraft-font", serif;
   }
