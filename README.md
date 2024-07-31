@@ -1,8 +1,2 @@
-# BonSite
-BonSite, Will replace the carrd version of it. 
-
-Report any Issues with the site here I guess, a redirect will exist on the carrd.
-
-**THIS SITE IS IN WIP**
-
-Written in HTML.
+# BonSite (Github Version)
+This is a website written by n_bonnie2 and will replace the carrd version of it, aiming to replace the old one.
