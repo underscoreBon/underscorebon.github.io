@@ -1,0 +1,64 @@
+
+@font-face {
+  font-family: 'minecraft-font';
+  src: url('fonts/minecraftia-regular-webfont.woff2') format('woff2'),
+       url('fonts/minecraftia-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "alternative-font";
+  src: url("");
+}
+
+.vertical-center {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+  
+p {
+  /*text-align: center;*/
+  color: rgb(0, 0, 0);
+  font-family: "minecraft-font", serif;
+}
+
+.navigationborder {
+  padding-left: 10%;
+  padding-right: 10%;
+  border-end-start-radius: 1%;
+  border-end-end-radius: 1%;
+  color: rgb(36, 7, 44);
+  background-color: rgb(198, 17, 189);
+  border: 4px solid black;
+  font-family: "minecraft-font", serif;
+}
+
+.topnav {
+  font-family: "minecraft-font", serif;
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ffc3f8;
+  color: rgb(0, 0, 0);
+}
+
+iframe[seamless] {
+  border: none;
+}
