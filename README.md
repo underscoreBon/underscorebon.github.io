@@ -10,4 +10,4 @@ Current (sub)domain used is: `underscorebon.info.gf`
 - Resources Menu
 - Making the site look 🌟🌟💫✨ stylish ✨💫🌟🌟
 - embedded stuff
-- make a fucking .gitignore
+- make a .gitignore
