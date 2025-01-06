@@ -11,8 +11,6 @@ class Header extends HTMLElement {
       </p>
         <div class="topnav">
           <a href="index.html">Home</a>
-          <a href="socials.html">Socials</a>
-          <a href="resources.html">Resources</a>
       </div>
       `;
     }
