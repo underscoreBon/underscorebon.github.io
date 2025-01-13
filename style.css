@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'custom1';
+        src: url('fonts/Grand9KPixelRegular.woff2') format('woff2'),
+            url('fonts/Grand9KPixelRegular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+            font-family: sans-serif;
+    }
+
+    body {
+        background-color: rgb(187, 49, 242);
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    h1   {
+        color: rgb(255, 237, 254);
+        border: 10px solid rgb(42, 1, 64);
+        background-color: rgb(71, 3, 98);
+        padding: 1%;
+    }
+    p    {
+        background-color: rgb(104, 77, 115);
+        border: 10px solid rgb(42, 1, 64);
+        color: rgb(4, 4, 4);
+        padding: 2%;
+        font-family: custom1;
+    }
+    the {
+        text-align: center;
+        text-shadow: 1px 1px rgba(255, 255, 255, 0.61);
+        color: rgb(0, 0, 0);
+        font-family: custom1;
+    }
