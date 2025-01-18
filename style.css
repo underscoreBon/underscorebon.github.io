@@ -9,26 +9,64 @@
     }
 
     body {
-        background-color: rgb(187, 49, 242);
-        padding-left: 2%;
-        padding-right: 2%;
+        background: conic-gradient(
+            #ffd7fd 90deg,
+            #b800d4 90deg 180deg,
+            #ffd7fd 180deg 270deg,
+            #b800d4 270deg
+        );
+        background-repeat: repeat ;
+        background-size: 60px 60px;
+        background-position: top left;
+        animation: 3s ease-in 1s infinite reverse both running slidein;
+        
+        padding-left: 20%;
+        padding-right: 20%;
     }
-    h1   {
+
+    .text_shadow{
+        background-color: rgba(0, 0, 0, 0.697);
+        color: white;
+        display: inline-block;
+        padding: 0.25%;
+      }
+
+    /* Classes */
+    .bon_container_top{
+        display: inline-flexbox;
         color: rgb(255, 237, 254);
         border: 10px solid rgb(42, 1, 64);
         background-color: rgb(71, 3, 98);
-        padding: 1%;
-    }
-    p    {
+        text-align: center;
+        padding: 12px;
+
+      }
+      .bon_container_links{
+        display: inline-block;
         background-color: rgb(104, 77, 115);
         border: 10px solid rgb(42, 1, 64);
         color: rgb(4, 4, 4);
-        padding: 2%;
+        padding: 12px 36px;
+        overflow: hidden;
+        text-align: center;
+      }
+
+    .bon_container    {
+        background-color: rgb(245, 218, 255);
+        border: 10px solid rgb(26, 7, 73);
+        color: rgb(4, 4, 4);
+        padding: 12px 36px;
+    }
+
+    .pixel_font{
         font-family: custom1;
     }
-    the {
-        text-align: center;
-        text-shadow: 1px 1px rgba(255, 255, 255, 0.61);
-        color: rgb(0, 0, 0);
-        font-family: custom1;
+
+
+    .white_link:visited, .white_link:active{
+        color: white;
+    }
+
+    .white_link:hover{
+        color: paleturquoise;
     }

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+
+    <html lang="en">
+    <script type="text/javascript" src="{{ site.baseurl }}/common.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <div>
+    <header class="">
+        <nav class="pixel_font">
+            <a href="/"><img class="bon_container_top"src="/images/logo.svg" alt="n_bonnie2" width="200" height="100"> </img>
+                <div class="pixel_font bon_container_links">
+                    <a class="white_link" href="/">Home</a> -
+                    <a class="white_link" href="/socials">Socials</a> -
+                    <a class="white_link" href="/blog">Blog</a> -
+                    <a class="white_link" href="/more">More</a>
+                </div>
+         </nav>
+    </header>
+</div>
+
+      {{ content }}
+
+        <footer class="pixel_font text_shadow">Site Hosted on: 
+        <a class="white_link" href="https://pages.github.com/">Github Pages</a>
+        </footer>
+
+  </body>
+</html>
