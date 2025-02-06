@@ -39,7 +39,6 @@
         background-color: rgb(71, 3, 98);
         text-align: center;
         padding: 12px;
-
       }
       .bon_container_links{
         display: inline-block;
@@ -52,6 +51,7 @@
       }
 
     .bon_container    {
+        display: inline-flexbox;
         background-color: rgb(245, 218, 255);
         border: 10px solid rgb(26, 7, 73);
         color: rgb(4, 4, 4);
@@ -69,4 +69,20 @@
 
     .white_link:hover{
         color: paleturquoise;
+    }
+
+    .keep_aspect{
+        object-fit: cover;
+    }
+
+    .float_left{
+        float: inline-start;
+    }
+
+    .container{
+        display: inline-flexbox;
+    }
+
+    .embed_padding{
+        padding: 16px;
     }
