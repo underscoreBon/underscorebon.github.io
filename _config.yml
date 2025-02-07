@@ -28,7 +28,6 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
 
@@ -54,4 +53,4 @@ plugins:
 #   - vendor/ruby/
 
 include:
-  - .well-known/
+  - .well-known
