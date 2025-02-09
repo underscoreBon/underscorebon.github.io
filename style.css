@@ -20,8 +20,8 @@
         background-position: top left;
         animation: 3s ease-in 1s infinite reverse both running slidein;
         
-        padding-left: 20%;
-        padding-right: 20%;
+        padding-left: 15%;
+        padding-right: 15%;
     }
 
     .text_shadow{
@@ -63,7 +63,7 @@
     }
 
 
-    .white_link:visited, .white_link:active{
+    .white_link:visited, .white_link:active, .white_link:disabled, .white_link:enabled, .white_link{
         color: white;
     }
 
@@ -72,7 +72,7 @@
     }
 
     .keep_aspect{
-        object-fit: cover;
+        object-fit: contain;
     }
 
     .float_left{
@@ -85,4 +85,8 @@
 
     .embed_padding{
         padding: 16px;
+    }
+
+    .half_image{
+        max-width: 100%;
     }

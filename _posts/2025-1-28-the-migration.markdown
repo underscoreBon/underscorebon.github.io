@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Welcome to BonSite 3.0"
-categories: "Site"
+categories: site
 author: "n_bonnie2"
 ---
 
