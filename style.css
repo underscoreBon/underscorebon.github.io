@@ -90,3 +90,7 @@
     .half_image{
         max-width: 100%;
     }
+
+    .center{
+        align-content: center;
+    }
