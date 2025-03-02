@@ -14,11 +14,19 @@
   name: lollifrost
   link: lollifrost
   image: contestants/lollifrost
-- starstruck: 
-  name: starstruck
-  link: starstruck
-  image: contestants/starstruck
 - poddy: 
   name: poddy
   link: poddy
   image: contestants/poddy
+- starstruck: 
+  name: starstruck
+  link: starstruck
+  image: contestants/starstruck
+- commandy: 
+  name: commandy terminal
+  link: commandy
+  image: contestants/commandy_terminal
+- gifty: 
+  name: gifty
+  link: gifty
+  image: contestants/gifty
