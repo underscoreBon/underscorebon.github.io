@@ -1,0 +1,41 @@
+---
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+    {% include meta.html %}
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/the_database/style.css" />
+</head>
+
+<body>
+
+<div id="container">
+    <div id="navigation">
+        <a href="{{ site.baseurl }}/{{page.prev}}" style="margin-right: 20px">previous</a>
+
+        <a href="{{ site.baseurl }}/{{page.next}}" style="margin-left: 20px">next</a>
+    </div>
+
+    <div id="image-container"><img src="{{ site.baseurl }}/images/{{ page.image }}" class="contestant-image keep_aspect"></div>
+    <div id="contestant-data">
+        <p class="competition-name">Competition Name: {{page.competition-name}}</p>
+
+        {% if page.legal-name %}
+            <p>Legal Name: {{page.legal-name}}</p>
+        {% endif %}
+
+        <p>Sex: {{page.sex}}</p>
+        <p>Age: {{page.age}}</p>
+        <p>Height: {{page.height}}</p>
+        <p>Residence: {{page.residence}}</p>
+        <p class="occupation">Occupation: {{page.occupation}}</p>
+        <p>Competition Placement: N/A</p>
+    </div>
+    <div style="margin: 10px;">
+        <p>Additional Notes:</p>
+        <p>- {{page.notes}}</p>
+    </div></div>
+</body></html>

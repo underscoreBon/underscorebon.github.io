@@ -1,0 +1,78 @@
+---
+title: the database
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+    {% include meta.html %}
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<style>
+ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+li{
+    display: inline-block;
+    width: calc(33% - 4em);
+    min-width: 300px;
+    text-align: center;
+    margin: 2em;
+}
+body{
+    font-size: 1.75em;
+    text-align: center;
+    background-color: #ececec;
+    font-family: 'Times New Roman', Times, serif;
+}
+a{
+    text-decoration: none;
+    color: blue;
+}
+#notice{
+    font-size: 0.5em;
+    background-color: #AAAAAA;
+    font-family: sans-serif;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+}
+#code-section{
+    font-family: 'Courier New', monospace;
+    background-color: white;
+    border: solid lightgray 4px; 
+    display: none;
+    padding: 10px;
+    text-align: left;
+    font-size: 24px; 
+    position: fixed; 
+    top: 10px; 
+    left: 0; 
+    line-height: 1.25;
+    width: 580px;
+    margin-left: calc(50vw - (608px / 2));
+}
+
+.keep_aspect{
+        object-fit: contain;
+    }
+</style>
+</head>
+
+<body>
+
+<div id="container">
+    <body>
+        <ul>
+            {% for data in site.data.contestants %}
+                <li><a href="{{ site.baseurl }}/the_database/{{ data.link }}"><img src="{{ site.baseurl }}/images/{{ data.image }}.png" class="keep_aspect" width="316px" height="280px"><br>{{data.name}}</a></li>
+            {% endfor %}
+        </ul>
+    </body>
+    <br>
+    <a href="{{ site.baseurl }}/">back to site</a>
+</body></html>
