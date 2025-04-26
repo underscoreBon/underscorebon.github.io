@@ -8,41 +8,16 @@ title: Blogs
   BonSite - Blog Posts
 </p1>
 <div class="posts">
-  <br>
-  Table of Contents:
-  <li><a href="#siteupdates">Site Updates</a></li>
-  <li><a href="#soonish">Coming Soon-ish?</a></li>
 
-  <br>
-
-  <h3 id="siteupdates">Site Updates</h3>
+  <h3 id="siteupdates">Posts</h3>
   {% for post in site.categories.site %}
   <h2><a href="{{ post.url }}">{{ post.title }}</a></li></h2>
-  📅 posted on: {{ post.date | date: "%B %e, %Y" }}
+  📅 posted on: {{ post.date | date: "%B %e, %Y" }} - By: {{post.author}}
   <div class="entry">
     <caption>
       {{ post.excerpt }}
     </caption>
-  </div>
-  {% else %}
-  <p class="pixel_font">
-    OOPS! There are no posts in this category!... yet, check back later!
-    <br>
-    <img class="keep_aspect half_image" src="/images/no_blog_posts.svg" alt="starstruck wondering where the posts are" width="300"> </img>
-  </p>
-  {% endfor %}
-
-  <br>
-  <br>
-
-  <h3 id="soonish">COMING SOONISH????</h3>
-  {% for post in site.categories.soonish %}
-  <h2><a href="{{ post.url }}">{{ post.title }}</a></li></h2>
-  📅 posted on: {{ post.date | date: "%B %e, %Y" }}
-  <div class="entry">
-    <caption>
-      {{ post.excerpt }}
-    </caption>
+    
   </div>
   {% else %}
   <p class="pixel_font">

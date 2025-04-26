@@ -30,3 +30,7 @@
   name: gifty
   link: gifty
   image: contestants/gifty
+- puppet: 
+  name: puppet
+  link: puppet
+  image: contestants/puppet

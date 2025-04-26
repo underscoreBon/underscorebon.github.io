@@ -1,0 +1,179 @@
+@font-face {
+    font-family: 'custom1';
+        src: url('fonts/Grand9KPixelRegular.woff2') format('woff2'),
+            url('fonts/Grand9KPixelRegular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+            font-family: sans-serif;
+    }
+
+    @keyframes thingy {
+        from {
+            background-position-x: 0px;
+            background-position-y: 0px;
+        }
+        to {
+            background-position-x: 60px;
+            background-position-y: 60px;
+        }
+
+      }
+
+    body {
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 1%;
+        padding-bottom: 2%;
+        max-width: 945px;
+        margin: auto;
+        background: conic-gradient(
+            #ffd7fd 90deg,
+            #b800d4 90deg 180deg,
+            #ffd7fd 180deg 270deg,
+            #b800d4 270deg
+        );
+
+        background-repeat: repeat;
+        background-size: 60px 60px;
+        background-position: top left;
+        animation-name: thingy;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    .text_shadow{
+        background-color: rgba(0, 0, 0, 0.697);
+        color: white;
+        display: inline-block;
+        padding: 0.25%;
+      }
+
+    /* Classes */
+    .bon_container_top{
+        display: block;
+        /* color: rgb(255, 237, 254); */
+        /* border: 10px solid rgb(42, 1, 64); */
+        /* background-color: rgb(71, 3, 98); */
+        text-align: center;
+        padding: 12px;
+      }
+    
+      .bon_container_links{
+        padding-bottom: 1%;
+        ul {
+
+            list-style-type: none;
+            padding: 0;
+            overflow: hidden;
+            background-color: #720f8b;
+            border: 10px solid rgb(26, 7, 73);
+          }
+          
+          li {
+            border-right: 10px solid rgb(26, 7, 73);
+            float: inline-start;
+            margin: auto;
+          }
+          
+          li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          }
+          
+          /* Change the link color to #111 (black) on hover */
+          li a:hover {
+            background-color: #111;
+          }
+      }
+
+    .bon_container    {
+        display: inline-flexbox;
+        background-color: rgb(245, 218, 255);
+        border: 10px solid rgb(26, 7, 73);
+        color: rgb(4, 4, 4);
+        padding: 6px 36px;
+    }
+
+    .pixel_font{
+        font-family: custom1;
+    }
+
+
+    .white_link:visited, .white_link:active, .white_link:disabled, .white_link:enabled, .white_link{
+        color: white;
+    }
+
+    .white_link:hover{
+        color: paleturquoise;
+    }
+
+    .keep_aspect{
+        object-fit: contain;
+    }
+
+    .float_left{
+        float: inline-start;
+    }
+
+    .container{
+        display: inline-flexbox;
+    }
+
+    .embed_padding{
+        padding: 16px;
+    }
+
+    .half_image{
+        max-width: 100%;
+    }
+
+    .center{
+        align-content: center;
+    }
+
+    .entry{
+        border-bottom: 4px solid #111;
+        padding: 1%;
+    }
+
+    .collapsible {
+        font-family: custom1;
+        background-color: #4f5154;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        
+      }
+      .collapsible:hover {
+        background-color: #d1e4ff;
+        color: black;
+      }
+      .content {
+        padding: 12px 18px;
+        display: none;
+        overflow: hidden;
+        background-color: #ffbdf6;
+        transition: max-height 0.2s ease-out;
+      }
+      
+      .collapsible:after {
+        content: '▼'; /* Unicode character for "plus" sign (+) */
+        font-size: 13px;
+        color: white;
+        float: right;
+        margin-left: 5px;
+      }
+      
+      .active:after {
+        content: "▲"; /* Unicode character for "minus" sign (-) */
+      }

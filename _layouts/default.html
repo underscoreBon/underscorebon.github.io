@@ -10,25 +10,25 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/styles/main.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
     <html lang="en">
-    <script type="text/javascript" src="{{ site.baseurl }}/common.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/javascript/main.js"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
   </head>
 
   <div>
     <header class="">
-        <nav class="pixel_font">
-            <a href="/"><img class="bon_container_top"src="/images/logo.svg" alt="n_bonnie2" width="200" height="100"> </img>
-                <div class="pixel_font bon_container_links">
-                    <a class="white_link" href="/">Home</a> -
-                    <a class="white_link" href="/blog">Blog</a> -
-                    <a class="white_link" href="/projects">Projects</a> - 
-                    <a class="white_link" href="/more">More</a>
-                </div>
+        <nav class="pixel_font bon_container_links" align="center">
+          <a href="/"><img class="keep_aspect"src="/images/logo.svg" alt="n_bonnie2" width="200" align="center"></a>
+                  <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/projects">Projects</a></li>
+                    <li><a href="/more">More</a></li>
+                  </ul>
          </nav>
     </header>
 </div>
@@ -43,4 +43,21 @@
         </footer>
 
   </body>
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+    </script>
 </html>
