@@ -5,6 +5,8 @@
 <html>
 <head>
     {% include meta.html %}
+
+        <title>{% if page.title %} – {{ page.title }}{% endif %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/the_database/style.css" />

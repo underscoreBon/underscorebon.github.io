@@ -3,14 +3,14 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
 
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}</title>
+    <title>{{ site.name }} {% if page.title %} – {{ page.title }}{% endif %}</title>
 
     {% if page.excerpt %}
-    <meta name="author" content="Bonsite Post"/>
+    <meta name="author" content="n_bonnie2"/>
     <meta name="description" content="{{ page.excerpt| strip_html }}" />
     <meta property="og:description" content="{{ page.excerpt| strip_html }}" />
     {% else %}
-    <meta name="author" content="Bonsite"/>
+    <meta name="author" content="n_bonnie2"/>
     <meta name="description" content="{{ site.description }}">
     <meta property="og:description" content="{{ site.description }}" />
     {% endif %}
