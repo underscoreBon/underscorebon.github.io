@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'custom1';
+    font-family: 'Grand9KPixelRegular';
         src: url('fonts/Grand9KPixelRegular.woff2') format('woff2'),
             url('fonts/Grand9KPixelRegular.woff') format('woff');
             font-weight: normal;
@@ -8,7 +8,7 @@
             font-family: sans-serif;
     }
 
-    @keyframes thingy {
+    @keyframes bg-scroll {
         from {
             background-position-x: 0px;
             background-position-y: 0px;
@@ -37,7 +37,7 @@
         background-repeat: repeat;
         background-size: 60px 60px;
         background-position: top left;
-        animation-name: thingy;
+        animation-name: bg-scroll;
         animation-duration: 2s;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
@@ -62,7 +62,9 @@
     
       .bon_container_links{
         padding-bottom: 1%;
-        ul {
+      }
+
+ .bon_container_links:ul {
 
             list-style-type: none;
             padding: 0;
@@ -71,13 +73,14 @@
             border: 10px solid rgb(26, 7, 73);
           }
           
-          li {
+           
+.bon_container_links:li {
             border-right: 10px solid rgb(26, 7, 73);
             float: inline-start;
             margin: auto;
           }
           
-          li a {
+           .bon_container_links:li a {
             display: block;
             color: white;
             text-align: center;
@@ -86,10 +89,9 @@
           }
           
           /* Change the link color to #111 (black) on hover */
-          li a:hover {
+           .bon_container_links:li a:hover {
             background-color: #111;
           }
-      }
 
     .bon_container    {
         display: inline-flexbox;
@@ -100,7 +102,7 @@
     }
 
     .pixel_font{
-        font-family: custom1;
+        font-family: "Grand9KPixelRegular",sans-serif;
     }
 
 
