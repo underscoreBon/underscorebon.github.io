@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Grand9KPixelRegular';
         src: url('fonts/Grand9KPixelRegular.woff2') format('woff2'),
-            url('fonts/Grand9KPixelRegular.woff') format('woff');
+            url('fonts/Grand9KPixelRegular.woff') format('woff'),
+            url('fonts/Grand9K Pixel.ttf') format('truetype');
             font-weight: normal;
             font-style: normal;
             font-display: swap;
-            font-family: sans-serif;
     }
 
     @keyframes bg-scroll {
