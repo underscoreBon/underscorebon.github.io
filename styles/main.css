@@ -62,9 +62,7 @@
     
       .bon_container_links{
         padding-bottom: 1%;
-      }
-
- .bon_container_links:ul {
+          ul {
 
             list-style-type: none;
             padding: 0;
@@ -72,15 +70,14 @@
             background-color: #720f8b;
             border: 10px solid rgb(26, 7, 73);
           }
-          
            
-.bon_container_links:li {
+          li {
             border-right: 10px solid rgb(26, 7, 73);
             float: inline-start;
             margin: auto;
           }
           
-           .bon_container_links:li a {
+           li a {
             display: block;
             color: white;
             text-align: center;
@@ -89,10 +86,10 @@
           }
           
           /* Change the link color to #111 (black) on hover */
-           .bon_container_links:li a:hover {
+           li a:hover {
             background-color: #111;
+           }
           }
-
     .bon_container    {
         display: inline-flexbox;
         background-color: rgb(245, 218, 255);
@@ -164,7 +161,7 @@
         padding: 12px 18px;
         display: none;
         overflow: hidden;
-        background-color: #ffbdf6;
+        background-color: #F3E5F5;
         transition: max-height 0.2s ease-out;
       }
       
