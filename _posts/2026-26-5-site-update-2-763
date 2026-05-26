@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "Site Update 2.763"
+categories: site
+author: "n_bonnie2"
+---
+
+not sorry for the bfdi reference.
+
+## Site Update 2.763
+(goes over the last few changes)
+- nerfed initial scale 1 -> 0.85
+- pixel font only now affect the headers
+ - another font will replace the body font later down the line
+- global javascript is now used
+- CurseForge links to TOUDM exists!
+- fixed styles on certain browsers/devices (most nitablly the navbar!)
+- sorry this is the is NOT bookpilled yet, sorry! iykyk
