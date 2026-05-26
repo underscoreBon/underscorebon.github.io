@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Grand9KPixelRegular';
+    font-family: 'pixel';
         src: url('fonts/Grand9KPixelRegular.woff2') format('woff2'),
             url('fonts/Grand9KPixelRegular.woff') format('woff'),
             url('fonts/Grand9K Pixel.ttf') format('truetype');
@@ -21,6 +21,7 @@
       }
 
     body {
+        font-family: sans-serif;
         padding-left: 5%;
         padding-right: 5%;
         padding-top: 1%;
@@ -42,6 +43,11 @@
         animation-iteration-count: infinite;
         animation-timing-function: linear;
     }
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "pixel", sans-serif
+}
+
 
     .text_shadow{
         background-color: rgba(0, 0, 0, 0.697);
@@ -99,7 +105,6 @@
     }
 
     .pixel_font{
-        font-family: "Grand9KPixelRegular",sans-serif;
     }
 
 
@@ -141,7 +146,7 @@
     }
 
     .collapsible {
-        font-family: custom1;
+        font-family: "pixel", sans-serif;
         background-color: #4f5154;
         color: white;
         cursor: pointer;
