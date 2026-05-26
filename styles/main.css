@@ -58,7 +58,6 @@ h1, h2, h3, h4, h5, h6{
 
     /* Classes */
     .bon_container_top{
-        font-family: "pixel", sans-serif;
         display: block;
         /* color: rgb(255, 237, 254); */
         /* border: 10px solid rgb(42, 1, 64); */
@@ -73,7 +72,7 @@ h1, h2, h3, h4, h5, h6{
       }
 
    .bon_container_links ul {
-       
+       font-family: "pixel", sans-serif;
             list-style-type: none;
             padding: 0;
             overflow: hidden;
@@ -81,11 +80,13 @@ h1, h2, h3, h4, h5, h6{
             border: 10px solid rgb(26, 7, 73);
           }
          .bon_container_links  li {
+             font-family: "pixel", sans-serif;
             border-right: 10px solid rgb(26, 7, 73);
             float: inline-start;
             margin: auto;
           }
            .bon_container_links  li a {
+               font-family: "pixel", sans-serif;
             display: block;
             color: white;
             text-align: center;
