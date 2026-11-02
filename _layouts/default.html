@@ -6,6 +6,8 @@
 
     {% include meta.html %}
 
+    {% include svg_icons.html %}
+
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -19,28 +21,56 @@
 
   </head>
 
-  <div>
-    <header class="">
-        <nav class="pixel_font bon_container_links" align="center">
-          <a href="/"><img class="keep_aspect"src="/images/logo.svg" alt="n_bonnie2" width="200" align="center"></a>
-                  <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/blog">Blog</a></li>
-                    <li><a href="/projects">Projects</a></li>
-                    <li><a href="/more">More</a></li>
-                  </ul>
-         </nav>
-    </header>
+
+  <!-- More/Settings Menu -->
+<div id="navbar-more" class="overlay float_right">
+
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">> Return to Site</a>
+  <div class="overlay-content">
+    <ul>
+        <li><h1>Preferences</h1></li><br>
+        
+    	<li><svg class="ui-icon-large"><use href="#icon-tile-osc"></use></svg>
+        <a onclick="toggleAnim()" href="javascript:void(0)" id="siteBGToggle"> Moving BG: NONE - REPORT THIS</a></li><br>
+        
+        <li><svg class="ui-icon-large"><use href="#icon-theme"></use></svg>
+        <a href="javascript:void(0)" onclick="toggleTheme()" id="siteThemeToggle">Theme: NONE - REPORT THIS</a></li>
+        
+    </ul>
+    <ul>
+    <li><h1>Resources</h1></li><br>
+    <li><i class='fas fa-scroll ui-icon-large' aria-hidden="true">&nbsp;
+    </i><a href="/asset_permissions">Asset Permissions</a></li><br>
+    
+    <li><i class='fab fa-github ui-icon-large' aria-hidden="true">&nbsp;
+    </i><a href="https://github.com/underscoreBon/underscorebon.github.io"
+>Github Repository</a></li><br>
+
+    <!--<li><i class='fas fa-folder ui-icon-large' aria-hidden="true">&nbsp;
+    </i><a href="javascript:void(0)">The Archives</a></li><br>-->
+    
+    <li><i class='fas fa-server ui-icon-large' aria-hidden="true">&nbsp;
+    </i><a href="/the_database">the_database.html</a></li></ul>
+  </div>
 </div>
 
-      {{ content }}
+  <!-- Navbar -->
+<div class="navbar">
+<ul>
+  <li><a href="/"><svg class="ui-icon"><use href="#icon-bon"></use></svg>
+&nbsp;n_bonnie2</a></li>
+  <li><a href="/"><i class="fas fa-home" aria-hidden="true">&nbsp;</i>Home</a></li>
+  <li><a href="/blog"><i class="fas fa-newspaper" aria-hidden="true">&nbsp;</i>Blog</a></li>
+  <li><a href="/projects"><i class="fas fa-folder" aria-hidden="true">&nbsp;</i>Projects</a></li>
+  <a class="navbar-home" href="javascript:void(0)" onclick="openNav()"><i class="fas fa-bars" aria-hidden="true"></i></a>
 
-        <footer class="pixel_font text_shadow">Site Hosted on: 
-        <a class="white_link" href="https://pages.github.com/">Github Pages</a>
-        <br>
-            Visits: <script type="text/javascript" src="https://counter.websiteout.com/js/21/9/0/0"></script>
-            <noscript>please enable javascript to enable the site counter.</noscript>
-        </footer>
+</ul>
+</div>
+
+<noscript>!!! NOTICE: JAVASCRIPT IS DISABLED, MOST FEATURES CANNOT BE USED [eg. Other Menu, Dropdown, Toggle BG, Themes, etc.]!!! </noscript>
+<div class="main"> 
+  {{ content }}
+</div>
 
   </body>
 </html>
