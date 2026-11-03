@@ -35,5 +35,4 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 # Fiddle, because apparently 3.5.0+ don't have it
 gem "fiddle"
 
-gem 'commonmarker', '= 0.23.11'
-  
+gem 'commonmarker', '~> 0.23.10'
