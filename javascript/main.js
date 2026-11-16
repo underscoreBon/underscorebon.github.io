@@ -8,7 +8,7 @@ for (i = 0; i < coll.length; i++) {
     if (content.style.maxHeight) {
     	content.style.maxHeight = null;
     } else {
-        content.style.maxHeight = content.scrollHeight + "px";
+        content.style.maxHeight = "100%";
     }});
 }
 
@@ -52,6 +52,10 @@ function toggleAnim() {
   	element.style.animationPlayState = "paused";
   };
   updateBGPref();
+}
+
+function WIPSetting() {
+	alert("This page is a Work in Progress!\nThis is currently a placeholder!\nREMINDER! This link might disappear at any time!");
 }
 
 // Update Preferences..
@@ -175,3 +179,4 @@ systemPrefersDark.addEventListener('change', handleThemeChange);
 // Run on Startup
 updateBGPref();
 updateThemePref();
+

@@ -20,7 +20,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=0.85">
 
   </head>
-
+<body>
 
   <!-- More/Settings Menu -->
 <div id="navbar-more" class="overlay float_right">
@@ -31,12 +31,12 @@
         <li><h1>Preferences</h1></li><br>
         
     	<li><svg class="ui-icon-large"><use href="#icon-tile-osc"></use></svg>
-        <a onclick="toggleAnim()" href="javascript:void(0)" id="siteBGToggle"> Moving BG: NONE - REPORT THIS</a></li><br>
+        <a onclick="toggleAnim()" href="javascript:void(0)" id="siteBGToggle"></a></li><br>
         
         <li><svg class="ui-icon-large"><use href="#icon-theme"></use></svg>
-        <a href="javascript:void(0)" onclick="toggleTheme()" id="siteThemeToggle">Theme: NONE - REPORT THIS</a></li>
-        
+        <a href="javascript:void(0)" onclick="toggleTheme()" id="siteThemeToggle"></a></li>    
     </ul>
+    
     <ul>
     <li><h1>Resources</h1></li><br>
     <li><i class='fas fa-scroll ui-icon-large' aria-hidden="true">&nbsp;
@@ -46,8 +46,8 @@
     </i><a href="https://github.com/underscoreBon/underscorebon.github.io"
 >Github Repository</a></li><br>
 
-    <!--<li><i class='fas fa-folder ui-icon-large' aria-hidden="true">&nbsp;
-    </i><a href="javascript:void(0)">The Archives</a></li><br>-->
+    <li><i class='fas fa-folder ui-icon-large' aria-hidden="true">&nbsp;
+    </i><a href="javascript:void(0)" onclick="WIPSetting()">The Archives</a></li><br>
     
     <li><i class='fas fa-server ui-icon-large' aria-hidden="true">&nbsp;
     </i><a href="/the_database">the_database.html</a></li></ul>
@@ -66,11 +66,9 @@
 
 </ul>
 </div>
-
 <noscript>!!! NOTICE: JAVASCRIPT IS DISABLED, MOST FEATURES CANNOT BE USED [eg. Other Menu, Dropdown, Toggle BG, Themes, etc.]!!! </noscript>
 <div class="main"> 
   {{ content }}
 </div>
-
-  </body>
+</body>
 </html>

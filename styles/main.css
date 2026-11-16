@@ -58,9 +58,9 @@ a:hover, a:active{
 color: var(--text-hover);
 }
 
-.ui-icon {width:17.5px;height:17.5px; transform: translate(0px, 2.5px); fill:currentColor; font-size: 17.5px;}
+.ui-icon {width:18px;height:18px; fill:currentColor; font-size: 18px;vertical-align: middle;}
 
-.ui-icon-large {width:32px;height:32px; transform: translate(0px, 2.5px); fill:currentColor; font-size: 28px; } 
+.ui-icon-large {width:32px;height:32px; fill:currentColor; font-size: 32px; vertical-align: middle;} 
 
 .main { display: inline-flexbox; background-color: var(--main-primary-light); border: 8px solid var(--main-primary-dark); color: var(--text-normal); padding: 6px 36px; margin-top: 100px; overflow: auto;}
 
@@ -91,17 +91,25 @@ color: var(--text-hover);
 
 .half_image{ max-width: 100%; } 
 
+
+/* Blog Styles */
+
+.blog_banner{ max-width: 100%; float: center; object-fit: contain; background-color: var(--main-primary-darker); }
+
 /* Dropdown Styles */
 
-.dropdown { font-family: "pixel", sans-serif; background-color: var(--main-primary); color:var(--text-navbar-normal); cursor: pointer; padding: 6px; width: 100%; border: none; text-align: left; outline: none; font-size: 15px; border: 6px solid var(--main-primary-dark);transition: 0.1s ease-out;} 
+.dropdown { font-family: "pixel", sans-serif; background-color: var(--main-primary); color:var(--text-navbar-normal); cursor: pointer; padding: 6px; width: 100%; border: none; text-align: left; outline: none; font-size: 15px; border: 6px solid var(--main-primary-dark);transition: 0.1s ease-out;overflow: hidden;} 
+
+/* use for every image */
+img { max-width: 100%; object-fit: contain; }
 
 .dropdown:hover { background-color: var(--main-primary-lighter); color: var(--text-navbar-hover); }
 
-.dropdown-content { padding: 0px 18px; max-height: 0px; overflow: hidden; background-color: var(--dropdown-shadow); transition: max-height 0.2s ease-out, border-width 0.2s ease-out; border: 0px solid var(--main-primary-dark);}
+.dropdown-content { padding: 0px 18px; max-height: 0; overflow: hidden; background-color: var(--dropdown-shadow);}
 
-.dropdown::after { content: '▼'; font-size: 18px; color: var(--text-navbar-normal); float: right; margin-left: 5px; } 
+.dropdown::after { content: '▼'; font-size: 18px; color:var(--text-navbar-normal); float: right; margin-left: 5px; overflow: hidden;} 
 
-.ddactive::after { content: "▲"; font-size: 18px; color: var(--text-navbar-normal); float: right; margin-left: 5px; }
+.ddactive::after { content: "▲"; font-size: 18px; color:  var(--text-navbar-normal); float: right; margin-left: 5px; overflow: hidden;}
 
 /* Overlay Styles */
 
@@ -182,4 +190,3 @@ color: var(--text-hover);
    }
   .navbar-home{ float: center !important; width: 100% !important; font-size:10px !important;}
 }
-
